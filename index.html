@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Javier Emiliano Acuña">
+    <link rel=StyleSheet href="./styles/styles.css" type="text/css" media=screen>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Podcast Channel</title>
+</head>
+<body>
+
+    <header class="header container"> 
+        <span class="logo">
+            <img  src="./imagenes/logo.svg" alt="Logo blue dot">
+        </span>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">  
+            <li> 
+                <a href="#episodios">  EPISODIOS</a> 
+            </li>
+            <li> 
+                <a href="#nosotros">   NOSOTROS</a> 
+            </li>
+            <li> 
+                <a href="#entrevistas">ENTREVISTAS</a> 
+            </li>
+            <li> 
+                <a href="#topicos">    TÓPICOS</a> 
+            </li>
+        </ul>
+    </header>
+
+    <section class="titulo container">
+        <h1>Hello <span id="world">world</span> pale blue dot<span id="punto">.</span></h1>
+        <p class="parrafo"><span id="portal-texto"></span><span id="un-texto">Un</span> podcasts que explora el mundo de la programación<span id="tecno-texto"></span>. 
+            Nuevos episodios, todos los jueves cada 15 días.</p>
+        <form>
+            <button id="conoce" formaction="#nosotros">Conocé más</button>
+        </form>
+    </section>
+
+    <div class="linea-arriba"></div>
+
+    <section class="episodios" id="episodios">
+        <h2 class="container padding">Episodios</h2>
+        <div class="podcasts container">
+            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"></iframe>
+        </div>
+    </section>
+
+    <div class="linea-abajo"></div>
+
+    <section class="nosotros container" id="nosotros">
+        <img src="./imagenes/phone.png" alt="The Secret History of Women in coding">
+        <div class="nosotr-texto">
+            <h2 class="color-negro">De dónde venimos</h2>
+            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, 
+                are challenged by this point of pale light. </p> <br>
+            <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, 
+                there is no hint that help will come from elsewhere to save us from ourselves.</p>   
+        </div>
+    </section>
+
+    <section class="entrevistas container" id="entrevistas">
+        <h2 class="color-negro padding">Invitadas/os estelares</h2>
+        <div class="wrapper">
+            <img src="./imagenes/grace-hopper.png"            alt="Grace Hopper">
+            <img src="./imagenes/Katie-Bouman.png"            alt="Katie Bouman">
+            <img src="./imagenes/Margaret_Hamilton.png"       alt="Margaret Hamilton">
+            <img src="./imagenes/ERAUnivac-1103.png"          alt="Era Univac 1103">
+            <img src="./imagenes/ComputerOperators-Eniac.png" alt="The world first programmable general-purpose computer">
+            <img src="./imagenes/susan-kare.png"              alt="Susan Kare">
+        </div>
+    </section>
+
+    <section class="topicos" id="topicos">
+        <h2 class="color-negro container padding">Algunos de nuestros temas</h2>
+        <div class="topic container">
+            <div class="tema"><img src="./imagenes/icon1.svg" alt="Trabajo remoto">
+                <h3>Trabajo remoto</h3>
+            </div>
+            <div class="tema"><img src="./imagenes/icon2.svg" alt="Repensando la programación">
+                <h3>Repensando la programación</h3>
+            </div>
+            <div class="tema"><img src="./imagenes/icon3.svg" alt="Bases del código">
+                <h3>Bases del código</h3>
+            </div>
+            <div class="tema"><img src="./imagenes/icon4.svg" alt="Seguridad informática">
+                <h3>Seguridad informática</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="linea-arriba"></div>
+
+    <div class="novedades">
+        <div class="novedad center">
+            <h2>¿Querés las últimas novedades?</h2>
+                <form>
+                    <button formaction="#episodios">Escuchá los episodios</button>
+                </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer container center">
+            <p class="footer-texto">© 2019— Hello blue pale dot</p>
+            <ul>
+                <li>
+                    <a href="https://www.spotify.com"   class="fa fa-spotify"   target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com"   class="fa fa-twitter"   target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com"  class="fa fa-facebook"  target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://web.telegram.org"  class="fa fa-telegram"  target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
